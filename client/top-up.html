@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/tailwind.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"
+    />
+    <style></style>
+  </head>
+  <body class="antialiased font-mons bg-gray-100 text-gray-800">
+    <div class="top-0 fixed w-full z-50 inset-x-0">
+      <nav class="relative w-full bg-gray-200">
+        <div class="">
+          <div
+            class="
+            p-4
+              bg-gray-200
+              z-20
+              relative
+              w-full
+              flex
+              items-center
+              justify-between
+              md:z-0
+            "
+          >
+            <div><h1 class="font-bold">Brand</h1></div>
+            <div class="btn md:hidden">
+              <i class="text-2xl w-12 ri-menu-line"></i>
+            </div>
+          </div>
+          <div
+            class="
+              px-4
+              pb-4
+              item
+              flex
+              text-indigo-500 text-sm
+              -mt-14
+              transition-all
+              duration-300
+              md:-mt-0 md:top-4 md:right-4 md:absolute md:pb-0
+            "
+          >
+            <ul class="md:flex gap-2">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="mt-24 container mx-auto">
+      <div class="px-4">
+        <div class="w-full"><h1 class="mt-4 text-xl font-semibold text-center uppercase">Topup Saldo</h1></div>
+        <div>
+          <div class="py-2 w-full md:w-1/2 mx-auto">
+            <form class="mt-4" action="#">
+              <div
+                class="my-2 rounded border border-gray-300 bg-white px-4 py-2"
+              >
+                <h1 class="text-lg font-semibold py-4">1. Lengkapi Data</h1>
+                <div class="w-full flex gap-2 justify-between">
+                  <input
+                    type="number"
+                    class="
+                      id
+                      w-1/2
+                      p-2
+                      rounded
+                      border border-green-700
+                      focus:border-green-500
+                      focus:ring
+                      focus:ring-green-200
+                      focus:outline-none
+                    "
+                    placeholder="User ID"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="my-2 rounded border border-gray-300 bg-white px-4">
+                <h1 class="text-lg font-semibold py-4">3. Metode pembayaran</h1>
+                <div class="w-full flex flex-col">
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/alfamidi.webp"
+                      alt="alfamidi"
+                    />
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/alfamart.webp"
+                      alt="alfamart"
+                    />
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/bri.webp"
+                      alt="bri"
+                    />
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/bni.webp"
+                      alt="bni"
+                    />
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/bca.webp"
+                      alt="bca"
+                    />
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/cimbniaga.webp"
+                      alt="cimbniaga"
+                    />
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/mandiri.webp"
+                      alt="mandiri"
+                    />
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/permata.webp"
+                      alt="permata"
+                    />
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/muamalat.webp"
+                      alt="muamalat"
+                    />
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/maybank.webp"
+                      alt="maybank"
+                    />
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/sinarmas.webp"
+                      alt="sinarmas"
+                    />
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/qris.webp"
+                      alt="qris"
+                    />
+                  </span>
+                  <!--end card-->
+                </div>
+              </div>
+              <div class="py-2">
+                <div
+                  class="
+                  tombol
+                  inline-block
+                    p-2
+                    rounded
+                    bg-pink-400
+                    text-gray-50
+                    focus:outline-none
+                    active:bg-blue-500
+                  "
+                >
+                Topup sekarang
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="toggle.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script>
+      let price_selected
+      let item_selected
+      const game_id = document.querySelector('.id')
+      const tombol = document.querySelector('.tombol')
+      const price = document.querySelectorAll('.price')
+      const value = document.querySelectorAll('.value')
+      for (const span of price) {
+        span.addEventListener('click', () => {
+          for (const rem of price) {
+            if (rem.classList.contains('bg-green-100')) {
+              rem.classList.remove('bg-green-100')
+            }
+          }
+          span.classList.add('bg-green-100')
+          price_selected = span.innerText
+          item_selected = span.querySelector('img').src
+        })
+      }
+      for (const select of value) {
+        select.addEventListener('click', () => {
+          for (const rem of value) {
+            if (rem.classList.contains('bg-green-100')) {
+              rem.classList.remove('bg-green-100')
+            }
+          }
+          select.classList.add('bg-green-100')
+        })
+      }
+      tombol.addEventListener('click', () => {
+        var closable = alertify.alert().setting('closable')
+        if (!price_selected || !item_selected) {
+          return
+        }
+        alertify
+          .alert()
+          .setting({
+            label: 'Beli',
+            message: `
+            <div class="text-2xl font-bold"> Detail Pesanan </div>
+              <div class="py-12 text-sm">
+              <div> Nama   : Django </div>
+              <div> ID     : ${game_id.value} </div>
+              <div> Harga  : ${price_selected} </div>
+              <div class="flex items-center gap-2"> Metode pembayaran: <img class="w-20 h-8 object-contain" src="${item_selected}" /></div>
+          </div>
+          `,
+          })
+          .show()
+      })
+    </script>
+  </body>
+</html>

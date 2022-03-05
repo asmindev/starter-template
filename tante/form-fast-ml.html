@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@10.8.1/dist/sweetalert2.min.css"
+    />
+    <link rel="stylesheet" href="/tailwind.css" />
+  </head>
+  <body class="antialiased font-mons bg-gray-100 text-gray-800">
+    <nav
+      class="
+        nav
+        w-full
+        h-full
+        items-center
+        bg-gray-500
+        text-gray-50
+        transition-all
+        duration-700
+      "
+    >
+      <div class="px-2 py-3">
+        <div class="w-full flex justify-between items-center">
+          <div>Brand</div>
+          <div class="toggle"><i class="text-2xl w-12 ri-menu-line"></i></div>
+        </div>
+      </div>
+      <div class="p-2 text-xs">
+        <ul class="md:flex gap-2">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="mt-24 w-1/2 mx-auto">
+      <img
+        class="w-8/12 mx-auto rounded object-top object-cover"
+        src="/assets/logo-ml.jpeg"
+        alt="Mobile legend"
+      />
+      <h1 class="mt-4 tracking-wider text-xl font-semibold uppercase">
+        Mobile Legends
+      </h1>
+    </div>
+    <div class="mt-8 container mx-auto">
+      <div class="px-4">
+        <div><h1 class="mt-4 font-semibold">Mobile Legends Fast</h1></div>
+        <div>
+          <div class="mt-2">
+            <p class="text-xs font-medium">
+              Cukup masukan ID dan SERVER, pilih Diamonds yang diinginkan,
+              lakukan pembayaran, lalu Tunggu 1-15 menit. Diamonds Akan
+              bertambah langsung ke akun Mobile Legends Anda setelah pembayaran
+              berhasil.
+            </p>
+          </div>
+          <div class="py-2 w-full md:w-1/2 mx-auto">
+            <form class="mt-4" action="#">
+              <div
+                class="my-2 rounded border border-gray-300 bg-white px-4 py-2"
+              >
+                <h1 class="text-lg font-semibold py-4">1. Lengkapi Data</h1>
+                <div class="w-full flex gap-2 justify-between">
+                  <input
+                    type="number"
+                    class="
+                      id
+                      w-1/2
+                      p-2
+                      rounded
+                      border border-blue-500
+                      focus:ring focus:ring-blue-200 focus:outline-none
+                    "
+                    placeholder="User ID"
+                    required
+                  />
+                  <input
+                    type="number"
+                    class="
+                      server
+                      w-1/2
+                      p-2
+                      rounded
+                      border border-blue-500
+                      focus:ring focus:ring-blue-200 focus:outline-none
+                    "
+                    placeholder="Server ID"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="my-2 rounded border border-gray-300 bg-white px-4">
+                <h1 class="text-lg font-semibold py-4">2. Pilih Nominal</h1>
+                <div class="w-full flex flex-wrap justify-center">
+                  <!--button-->
+                  <div class="w-1/2 px-1 py-2 flex">
+                    <span
+                      class="
+                        value
+                        text-center
+                        w-full
+                        p-2
+                        rounded
+                        border border-blue-500
+                        focus:outline-none
+                      "
+                    >
+                      100 Diamonds
+                    </span>
+                  </div>
+                  <!--end button-->
+                  <!--button-->
+                  <div class="w-1/2 px-1 py-2 flex">
+                    <span
+                      class="
+                        value
+                        text-center
+                        w-full
+                        p-2
+                        rounded
+                        border border-blue-500
+                        focus:outline-none
+                      "
+                    >
+                      100 Diamonds
+                    </span>
+                  </div>
+                  <!--end button-->
+                  <!--button-->
+                  <div class="w-1/2 px-1 py-2 flex">
+                    <span
+                      class="
+                        value
+                        text-center
+                        w-full
+                        p-2
+                        rounded
+                        border border-blue-500
+                        focus:outline-none
+                      "
+                    >
+                      100 Diamonds
+                    </span>
+                  </div>
+                  <!--end button-->
+                </div>
+              </div>
+              <div class="my-2 rounded border border-gray-300 bg-white px-4">
+                <h1 class="text-lg font-semibold py-4">3. Metode pembayaran</h1>
+                <div class="w-full flex flex-col">
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/saldo.png"
+                      alt="saldo"
+                    />
+                    <p class="text-sm">19.500</p>
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/alfamidi.webp"
+                      alt="alfamidi"
+                    />
+                    <p class="text-sm">19.500</p>
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/alfamart.webp"
+                      alt="alfamart"
+                    />
+                    <p class="text-sm">19.500</p>
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/bri.webp"
+                      alt="bri"
+                    />
+                    <p class="text-sm">19.500</p>
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/bni.webp"
+                      alt="bni"
+                    />
+                    <p class="text-sm">19.500</p>
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/bca.webp"
+                      alt="bca"
+                    />
+                    <p class="text-sm">19.500</p>
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/cimbniaga.webp"
+                      alt="cimbniaga"
+                    />
+                    <p class="text-sm">19.500</p>
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/mandiri.webp"
+                      alt="mandiri"
+                    />
+                    <p class="text-sm">19.500</p>
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/permata.webp"
+                      alt="permata"
+                    />
+                    <p class="text-sm">19.500</p>
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/muamalat.webp"
+                      alt="muamalat"
+                    />
+                    <p class="text-sm">19.500</p>
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/maybank.webp"
+                      alt="maybank"
+                    />
+                    <p class="text-sm">19.500</p>
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/sinarmas.webp"
+                      alt="sinarmas"
+                    />
+                    <p class="text-sm">19.500</p>
+                  </span>
+                  <!--end card-->
+                  <!--card-->
+                  <span
+                    class="
+                      price
+                      w-full
+                      my-2
+                      rounded
+                      shadow
+                      p-3
+                      flex
+                      items-center
+                      justify-between
+                    "
+                  >
+                    <img
+                      class="w-20 h-8 object-contain"
+                      src="/assets/webp/qris.webp"
+                      alt="qris"
+                    />
+                    <p class="text-sm">19.500</p>
+                  </span>
+                  <!--end card-->
+                </div>
+              </div>
+              <div
+                class="my-2 rounded border border-gray-300 bg-white px-4 py-2"
+              >
+                <h1 class="text-lg font-semibold py-4">4. Whatsapp</h1>
+                <div class="w-full flex gap-2 justify-between">
+                  <input
+                    type="number"
+                    class="
+                      w-full
+                      p-2
+                      rounded
+                      border border-blue-700
+                      focus:border-blue-500
+                      focus:ring
+                      focus:ring-blue-200
+                      focus:outline-none
+                    "
+                    placeholder="Whatsapp"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="py-2">
+                <div
+                  class="
+                    tombol
+                    p-2
+                    rounded
+                    bg-blue-500
+                    text-gray-50
+                    focus:outline-none
+                    active:bg-blue-500
+                  "
+                >
+                  Konfirmasi
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fixed bottom-4 right-4 z-50">
+      <a href="https://instagram.com/iniasmin_">
+        <img
+          class="w-12"
+          src="/assets/instagram-logo-png-2428.png"
+          alt="logo"
+        />
+      </a>
+    </div>
+    <footer class="mt-8 p-8 text-center bg-gray-200 text-gray-700">
+      <p class="leading-tight text-xs">
+        Penyedia layanan top-up game favorite-mu tanpa ribet, nikmati pengalaman
+        top-up mu bersama kami.
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.8.1/dist/sweetalert2.all.min.js"></script>
+    <script src="toggle.js"></script>
+    <script>
+      let price_selected
+      let item_selected
+      const game_id = document.querySelector('.id')
+      const server_id = document.querySelector('.server')
+      const tombol = document.querySelector('.tombol')
+      const price = document.querySelectorAll('.price')
+      const value = document.querySelectorAll('.value')
+      for (const span of price) {
+        span.addEventListener('click', () => {
+          for (const rem of price) {
+            if (rem.classList.contains('bg-blue-100')) {
+              rem.classList.remove('bg-blue-100')
+            }
+          }
+          span.classList.add('bg-blue-100')
+          price_selected = span.innerText
+          item_selected = span.querySelector('img').src
+        })
+      }
+      for (const select of value) {
+        select.addEventListener('click', () => {
+          for (const rem of value) {
+            if (rem.classList.contains('bg-blue-100')) {
+              rem.classList.remove('bg-blue-100')
+            }
+          }
+          select.classList.add('bg-blue-100')
+        })
+      }
+      tombol.addEventListener('click', () => {
+        if (!price_selected || !item_selected) {
+          return
+        }
+        Swal.fire({
+          title: `Detail Pesanan`,
+          html: `
+            <div class="text-left text-2xl font-bold">
+              <div class="py-12 text-sm">
+                <div> Nama   : Django </div>
+                <div> ID     : ${game_id.value} (${server_id.value}) </div>
+                <div> Harga  : ${price_selected} </div>
+                <div class="flex items-center gap-2"> Metode pembayaran: <img class="w-20 h-8 object-contain" src="${item_selected}" /></div>
+              </div>
+            </div>
+          `,
+          showCancelButton: true,
+          cancelButtonText: 'Batal',
+          confirmButtonText: `Beli`,
+        })
+      })
+    </script>
+  </body>
+</html>

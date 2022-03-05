@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= device-width , initial-scale= 1.0 " />
+    <title>Malik Store</title>
+    <link href="tailwind.css" rel="stylesheet" />
+    <link href="remixicon.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="antialiased text-white font-mons bg-gray-200">
+    <nav
+      class="
+        top-0
+        absolute
+        z-10
+        w-full
+        bg-indigo-500
+        md:flex md:items-center md:justify-between md:pr-4
+      "
+    >
+      <div class="px-4 py-2 flex justify-between items-center">
+        <div>
+          <h1 class="uppercase text-lg font-semibold">malik store</h1>
+        </div>
+        <div class="button md:hidden">
+          <i class="text-2xl font-medium ri-menu-line"></i>
+        </div>
+      </div>
+      <div
+        class="
+          hidden
+          toggle
+          absolute
+          text-gray-700
+          w-full
+          h-screen
+          md:static md:block md:w-min md:h-full md:text-white
+        "
+      >
+        <div
+          class="
+            md:text-sm
+            bg-gray-200
+            uppercase
+            w-full
+            h-full
+            flex flex-col
+            items-center
+            justify-center
+            md:flex-row md:items-start md:gap-4 md:bg-transparent
+            whitespace-nowrap
+          "
+        >
+          <a href="#">beli</a>
+          <a href="#">login</a>
+          <a href="#">Ganti password</a>
+
+          <a href="#">dashboard</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container text-gray-700 mx-auto">
+      <div class="mt-14 w-full">
+        <div class="flex justify-center">
+          <h1
+            class="
+              text-gray-700 text-2xl
+              font-bold
+              tracking-wide
+              inline-block
+              px-2
+              border-b-2 border-indigo-500
+            "
+          >
+            Malik Store
+          </h1>
+        </div>
+        <div>
+          <div class="w-full mt-2 flex justify-center">
+            <div class="w-10/12 md:w-full md:flex md:flex-wrap">
+              <!--card begin-->
+              <div class="md:w-1/2 px-2 py-4">
+                <div class="rounded shadow overflow-hidden bg-gray-50">
+                  <img
+                    class="w-full h-52 object-cover"
+                    src="/ml.jpg"
+                    alt="mobile legend"
+                  />
+                  <div class="mt-2 p-4 flex justify-between items-center">
+                    <h1 class="text-xl font-semibold text-indigo-500">
+                      Mobile legend
+                    </h1>
+                    <button
+                      class="
+                        text-sm
+                        mt-2
+                        text-white
+                        py-2
+                        px-3
+                        uppercase
+                        bg-indigo-500
+                        rounded
+                        focus:outline-none
+                      "
+                    >
+                      Beli
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!--end card-->
+              <!--card begin-->
+              <div class="md:w-1/2 p-2">
+                <div class="rounded shadow overflow-hidden bg-gray-50">
+                  <img
+                    class="w-full h-52 object-cover"
+                    src="/ss.jpg"
+                    alt="sausage man"
+                  />
+                  <div class="mt-2 p-4 flex justify-between items-center">
+                    <h1 class="text-xl font-semibold text-indigo-500">
+                      Sausage Man
+                    </h1>
+                    <button
+                      class="
+                        text-sm
+                        mt-2
+                        text-white
+                        py-2
+                        px-3
+                        uppercase
+                        bg-indigo-500
+                        rounded
+                        focus:outline-none
+                      "
+                    >
+                      Beli
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!--end card-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

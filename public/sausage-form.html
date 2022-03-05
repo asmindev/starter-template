@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= device-width , initial-scale= 1.0 " />
+    <title>Form pembelian</title>
+    <link href="tailwind.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="antialiased font-mons bg-gray-200 text-gray-700 w-full h-screen">
+    <div class="container h-full mx-auto">
+      <div class="w-full h-full flex flex-col items-center justify-center">
+        <form
+          class="w-10/12 p-6 bg-gray-50 shadow rounded mx-auto"
+          method="post"
+          action="#"
+        >
+          <div class="w-full mx-auto mt-10 px-6">
+            <h1 class="text-3xl font-bold text-center uppercase">Top up</h1>
+            <h1
+              class="
+                text-2xl
+                font-bold
+                text-center
+                uppercase
+                border-b-2 border-indigo-500
+              "
+            >
+              Sausage man
+            </h1>
+          </div>
+          <div class="w-full py-8 mt-8">
+            <div class="relative">
+              <label
+                class="text-xs font-bold absolute px-1 left-3 -top-2 bg-gray-50"
+                for="id"
+                >ID</label
+              >
+              <input
+                autocomplete="off"
+                class="
+                  text-sm
+                  py-3
+                  px-4
+                  w-full
+                  border-2 border-indigo-500
+                  rounded-lg
+                  focus:outline-none focus:ring-2 focus:ring-indigo-200
+                  placeholder-indigo-300
+                  text-indigo-700
+                "
+                placeholder="Masukkan ID"
+                type="number"
+                required
+                id="id"
+              />
+            </div>
+            <div class="top-3 relative">
+              <label
+                class="text-xs font-bold absolute px-1 left-3 -top-2 bg-gray-50"
+                for="item"
+                >Item</label
+              >
+              <select
+                id="item"
+                class="
+                  text-indigo-400 text-sm
+                  py-3
+                  pl-3
+                  w-full
+                  bg-gray-50
+                  border-2 border-indigo-500
+                  rounded-lg
+                  focus:outline-none focus:ring-2 focus:ring-indigo-200
+                "
+              >
+                <option class="py-1">Option 1</option>
+                <option class="py-1">Option 2</option>
+                <option class="py-1">Option 3</option>
+              </select>
+            </div>
+            <div class="relative top-6">
+              <label
+                class="text-xs font-bold absolute px-1 left-3 -top-2 bg-gray-50"
+                for="wa"
+                >Whatsapp</label
+              >
+              <input
+                autocomplete="off"
+                class="
+                  text-sm
+                  py-3
+                  px-4
+                  w-full
+                  border-2 border-indigo-500
+                  rounded-lg
+                  focus:outline-none focus:ring-2 focus:ring-indigo-200
+                  placeholder-indigo-300
+                  text-indigo-700
+                "
+                placeholder="Nomor Whatsapp"
+                type="number"
+                required
+                id="wa"
+              />
+            </div>
+            <div class="w-full mt-16 flex justify-center">
+              <button
+                class="
+                  px-4
+                  py-2
+                  rounded-md
+                  text-gray-50
+                  bg-indigo-500
+                  focus:outline-none
+                  hover:bg-indigo-700
+                "
+              >
+                Konfirmasi
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="w-10/12 mt-4 flex justify-center">
+          <div class="px-4 py-2 bg-indigo-50 text-gray-700">
+            <p class="p-4 text-base font-medium text-center">
+              Terima kasih! Pesananmu sedang diproses. Cek pesananmu
+              <a
+                href="/dashboard.html"
+                class="text-indigo-500 hover:text-indigo-700"
+                >disini</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

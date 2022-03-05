@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/tailwind.css" />
+  </head>
+  <body class="antialiased font-mons bg-gray-100 text-gray-800">
+    <div class="container mx-auto h-screen">
+      <div class="w-full h-full flex justify-center items-center">
+        <div class="w-10/12 p-4 rounded shadow bg-white">
+          <div class="my-8 mx-auto">
+            <h1 class="text-center uppercase font-bold text-2xl">
+              Cek pesanan
+            </h1>
+          </div>
+          <div class="mt-8 font-medium flex flex-col justify-center">
+            <input
+              class="p-2 border border-gray-500 rounded focus:outline-none"
+              type="number"
+              placeholder="Kode Resi"
+            />
+            <button
+              class="
+                button
+                mt-8
+                w-1/4
+                text-sm
+                py-2
+                px-4
+                bg-blue-400
+                rounded-xl
+                focus:outline-none
+                hover:bg-blue-700
+                text-gray-50
+              "
+            >
+              Cek
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const button = document.querySelector('.button')
+      button.addEventListener('click', () => {
+        alert('ok')
+      })
+    </script>
+  </body>
+</html>
